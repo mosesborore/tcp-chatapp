@@ -25,7 +25,7 @@ class Server(threading.Thread):
         except socket.error as err:
             print(f"Can't bind to the {self.host}: {self.port}")
 
-        server_sock.listen(5)
+        server_sock.listen(2)
         print(f"Server is listening at: {server_sock.getsockname()}")
 
         # accepting connections
